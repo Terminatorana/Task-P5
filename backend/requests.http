@@ -1,0 +1,23 @@
+### Health check
+GET http://localhost:5000/api/health
+
+### Valid subscribe (use the email you signed up to Resend with)
+POST http://localhost:5000/api/subscribe
+Content-Type: application/json
+
+{ "email": "you@example.com" }
+
+### Invalid email -> 400
+POST http://localhost:5000/api/subscribe
+Content-Type: application/json
+
+{ "email": "not-an-email" }
+
+### Missing email -> 400
+POST http://localhost:5000/api/subscribe
+Content-Type: application/json
+
+{}
+
+### Unknown route -> 404
+GET http://localhost:5000/api/nothing
