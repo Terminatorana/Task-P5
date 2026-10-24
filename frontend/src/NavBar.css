@@ -1,0 +1,48 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 10px 24px;
+  background: #e8e8e8;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: #111;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.navbar-search {
+  flex: 1;
+  padding: 7px 12px;
+  border: 1px solid #bbb;
+  background: #fff;
+  color: #222;
+  font-size: 0.85rem;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.navbar-links a,
+.navbar-logout {
+  color: #111;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.navbar-links a:hover,
+.navbar-logout:hover {
+  text-decoration: underline;
+}

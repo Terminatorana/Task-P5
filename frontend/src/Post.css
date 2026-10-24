@@ -1,0 +1,168 @@
+.post-page {
+  display: flex;
+  justify-content: center;
+  padding: 40px 16px;
+  background: #000;
+  min-height: 60vh;
+}
+
+.post-card {
+  width: 100%;
+  max-width: 820px;
+  padding: 20px 28px 32px;
+  background: #fff;
+  color: #111;
+  font-family: "Courier New", Courier, monospace;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.post-bar {
+  margin: 0 0 14px;
+  padding: 6px 10px;
+  background: #e5e5e5;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.post-bar-sub {
+  margin-top: 18px;
+}
+
+.post-type {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  margin-bottom: 4px;
+  font-size: 0.9rem;
+}
+
+.post-type label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.post-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 16px 0 4px;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.post-row input {
+  flex: 1;
+}
+
+.post-label {
+  display: block;
+  margin: 18px 0 6px;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.post-card input[type="text"],
+.post-textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px 10px;
+  border: 1px solid #333;
+  background: #fff;
+  color: #111;
+  font-family: inherit;
+  font-size: 0.9rem;
+}
+
+.post-textarea {
+  resize: vertical;
+}
+
+.post-textarea-small {
+  min-height: 80px;
+}
+
+.post-textarea-large {
+  min-height: 220px;
+}
+
+.post-card input[type="text"]:focus,
+.post-textarea:focus {
+  outline: 2px solid #93c5fd;
+}
+
+.post-error {
+  margin: 4px 0 0;
+  color: #dc2626;
+  font-size: 0.8rem;
+}
+
+.post-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 24px;
+}
+
+.post-button {
+  padding: 8px 48px;
+  background: #3b82f6;
+  color: #fff;
+  border: none;
+  font-family: inherit;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.post-button:hover {
+  background: #2563eb;
+}
+
+/* ---------- Popup ---------- */
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+}
+
+.popup {
+  width: 90%;
+  max-width: 380px;
+  padding: 24px;
+  background: #fff;
+  color: #111;
+  border-top: 6px solid #16a34a;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.popup-error {
+  border-top-color: #dc2626;
+}
+
+.popup h3 {
+  margin: 0 0 8px;
+}
+
+.popup button {
+  margin-top: 12px;
+  padding: 6px 28px;
+  background: #3b82f6;
+  color: #fff;
+  border: none;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+@media (max-width: 560px) {
+  .post-row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 4px;
+  }
+}

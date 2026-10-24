@@ -1,0 +1,148 @@
+.auth-page {
+  display: flex;
+  justify-content: center;
+  padding: 48px 16px;
+  background: #000;
+  min-height: 60vh;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 460px;
+  padding: 28px 36px 40px;
+  background: #fff;
+  color: #111;
+  border: 1px solid #3b82f6;
+  font-family: "Courier New", Courier, monospace;
+  text-align: left;
+}
+
+.auth-card-signup {
+  max-width: 640px;
+}
+
+.auth-card-top {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 12px;
+}
+
+.auth-title {
+  text-align: center;
+  color: #2563eb;
+  font-weight: 400;
+  font-size: 1.15rem;
+  margin: 0 0 28px;
+}
+
+.auth-card form {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-card label {
+  font-size: 0.85rem;
+  margin: 14px 0 6px;
+}
+
+.auth-card input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 7px 10px;
+  border: 1px solid #ccc;
+  background: #fff;
+  color: #111;
+  font-size: 0.95rem;
+}
+
+.auth-card input:focus {
+  outline: 2px solid #93c5fd;
+  border-color: #3b82f6;
+}
+
+/* Sign-up page: label on the left, input on the right (matches the design) */
+.auth-grid-form {
+  display: grid !important;
+  grid-template-columns: 150px 1fr;
+  align-items: start;
+  column-gap: 16px;
+  row-gap: 14px;
+}
+
+.auth-grid-form label {
+  margin: 8px 0 0;
+  font-weight: 700;
+}
+
+.auth-primary-btn {
+  margin-top: 28px;
+  padding: 9px 12px;
+  background: #3b82f6;
+  color: #fff;
+  border: none;
+  font-family: inherit;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.auth-primary-btn:hover:not(:disabled) {
+  background: #2563eb;
+}
+
+.auth-primary-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.auth-outline-btn {
+  padding: 5px 12px;
+  background: #fff;
+  color: #2563eb;
+  border: 1px solid #3b82f6;
+  font-family: inherit;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.auth-outline-btn:hover {
+  background: #eff6ff;
+}
+
+.auth-field-error {
+  display: block;
+  margin-top: 4px;
+  color: #dc2626;
+  font-size: 0.78rem;
+}
+
+.auth-error-box {
+  background: #fef2f2;
+  border: 1px solid #fca5a5;
+  color: #991b1b;
+  padding: 10px 12px;
+  font-size: 0.85rem;
+  margin: 0 0 8px;
+}
+
+.auth-error-box a {
+  color: #991b1b;
+  font-weight: 700;
+}
+
+.auth-success {
+  background: #f0fdf4;
+  border: 1px solid #86efac;
+  color: #166534;
+  padding: 10px 12px;
+  font-size: 0.85rem;
+  margin: 0 0 8px;
+}
+
+@media (max-width: 560px) {
+  .auth-grid-form {
+    grid-template-columns: 1fr;
+  }
+  .auth-grid-form label {
+    margin-top: 0;
+  }
+}

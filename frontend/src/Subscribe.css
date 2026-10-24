@@ -1,0 +1,65 @@
+.sub-section {
+  background: #cccccc;
+  padding: 24px 16px;
+  text-align: center;
+}
+
+.sub-form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.sub-title {
+  font-weight: 700;
+  color: #6b7280;
+  letter-spacing: 0.5px;
+}
+
+.sub-input {
+  width: 260px;
+  padding: 8px 10px;
+  border: 1px solid #333;
+  background: #fff;
+  color: #111;
+  font-size: 0.9rem;
+}
+
+.sub-button {
+  padding: 8px 20px;
+  border: none;
+  background: #3b82f6;
+  color: #fff;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.sub-button:hover:not(:disabled) {
+  background: #2563eb;
+}
+
+.sub-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.sub-message {
+  margin: 14px auto 0;
+  max-width: 560px;
+  padding: 8px 12px;
+  font-size: 0.9rem;
+}
+
+.sub-success {
+  background: #f0fdf4;
+  border: 1px solid #86efac;
+  color: #166534;
+}
+
+.sub-error {
+  background: #fef2f2;
+  border: 1px solid #fca5a5;
+  color: #991b1b;
+}
